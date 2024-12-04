@@ -163,40 +163,57 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full-Stack Developer",
-    company_name: "Hack Reactor",
+    title: "Data scientist",
+    company_name: "SteelCad",
     icon: code1,
     iconBg: "#E6DEDD",
-    date: "2021",
+    date: "March 2020 - July 2021",
     points: [
-      "Successfully led a team of engineers in the development and deployment of a high-performance API web application within a tight six-week timeframe.",
-      "Designed and implemented a scalable backend service utilizing MongoDB and FastAPI, following a test-driven development approach, ensuring a stable and well-tested codebase.",
-      "Implemented secure user authentication by integrating Simple JWT, ensuring secure access to sensitive user information and a seamless user experience.",
+      "Collecting, cleaning, and preprocessing data from various sources, such as databases, APIs, and CSV files.",
+      "Exploring and visualizing data to gain insights and identify patterns using tools like Python, R, and libraries like Pandas, Matplotlib, and Seaborn.",
+      "Building and training machine learning models to solve specific business problems, such as classification, regression, clustering, and recommendation systems.",
+      "Evaluating model performance and fine-tuning parameters to improve accuracy, precision, recall, or other relevant metrics.",
     ],
   },
   {
-    title: "Full-Stack Developer",
-    company_name: "ChiqueChickShop",
+    title: "Data Analyst",
+    company_name: "Abha International Private Hospital",
     icon: code1,
     iconBg: "#383E56",
-    date: "2022",
-    points: [
-      "Developed ChiqueChickShop, a responsive e-commerce platform.",
-      "Enhanced user experience with intuitive navigation features.",
-      "Implemented secure payment processing for online transactions.",
-    ],
+    date: "July 2021 - July 2023",
+      points: [
+        "Analyzing healthcare data to identify trends, patterns, and insights that can inform decision-making and improve patient outcomes.",
+        "Generating reports and dashboards to present key performance indicators (KPIs), such as patient wait times, readmission rates, and resource utilization, to hospital administrators and healthcare providers.",
+        "Supporting quality improvement initiatives by identifying areas for improvement, measuring outcomes, and tracking progress over time.",
+        "Keeping up-to-date with advancements in healthcare technology, data analytics tools, and industry best practices to continuously improve analytical capabilities and drive innovation in healthcare delivery.",
+      ],
   },
   {
-    title: "Full-Stack Developer",
-    company_name: "Madamcoon",
+    title: "Data Analyst",
+    company_name: "Doctor Samir Abbas Hospital",
     icon: code1,
     iconBg: "#E6DEDD",
-    date: "2023",
-    points: [
-      "Spearheaded the revamp of Madamcoon, focusing on responsive design and user experience improvements.",
-      "Integrated CMS and implemented SEO strategies for enhanced online visibility.",
-      "Optimized the website for increased engagement and performance metrics.",
-    ],
+    date: "July 2023 - July 2024",
+      points: [
+        "Creating and optimizing dashboards, reports, and interactive visualizations using BI tools such as Tableau, Power BI, or QlikView to provide insights into key performance indicators (KPIs) and operational metrics.",
+        "Collaborating with stakeholders including hospital administrators, physicians, nurses, and department heads to understand their reporting requirements and translate them into actionable insights..",
+        "Conducting ad-hoc analysis and exploratory data analysis (EDA) to uncover trends, patterns, and anomalies in healthcare data that may impact decision-making and patient care.",
+        "Providing training and support to end-users on BI tools and data visualization techniques to empower them to leverage data effectively in their decision-making processes.",
+      ],
+  },
+  {
+    title: "Artificial Intelligence Developer",
+    company_name: "Doctor Samir Abbas Hospital",
+    icon: code1,
+    iconBg: "#E6DEDD",
+    date: "July 2024 - Present",
+      points: [
+        "Developing and deploying AI-powered applications and tools such as predictive analytics models, natural language processing (NLP) algorithms, and computer vision systems to assist healthcare providers in diagnosing diseases, predicting patient outcomes, and personalizing treatment plans.",
+        "Collaborating with healthcare professionals including doctors, nurses, and researchers to identify opportunities where AI can improve patient outcomes, streamline workflows, and enhance clinical decision-making.",
+        "Building and Maintaining AI-powered applications powered  like virtual assistants and chatbots to assist doctors and patients",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Integrating AI solutions with existing healthcare information systems such as electronic health records (EHR), picture archiving and communication systems (PACS), and hospital management systems to enable seamless data exchange and interoperability.",
+      ],
   },
   // {
   //   title: "Fulstack Developer",
@@ -227,27 +244,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I can't say enough good things about Jeff. He's a true team player who always puts the needs of the project first. If you're looking for a software engineer who can deliver results, Jeff is your guy.",
-    name: "Halley Bennett",
-    designation: "",
-    company: "Hack Reactor",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Mohammed's passion for AI led him to become a skilled AI developer. His contributions have revolutionized healthcare processes and improved patient outcomes. Mohammed's ability to think critically, solve problems, and collaborate with teams makes him an invaluable asset. His journey is an inspiration, and his dedication to pushing boundaries in AI is commendable. Mohammed Bahageel is a remarkable professional advancing healthcare AI..",
+    name: "Mohammed Etman",
+    designation: " CEO Advisor For Organizational Excellence",
+    company: "Samir Abbas Hospital",
+    image: "https://i.postimg.cc/Z5ZZVPbY/itman.jpg",
   },
   {
     testimonial:
-      "Jeff is an incredible problem solver. Whenever we ran into a roadblock on our project, he was always able to come up with creative solutions that kept us moving forward.",
-    name: "Yishak Wesego",
-    designation: "",
-    company: "Hack Reactor",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Mohammed Bahageel consistently impressed me throughout the CAIS program. His dedication and grasp of complex AI concepts were remarkable. Mohammed actively participated in discussions and readily assisted his peers. His problem-solving skills were exceptional, and his final project demonstrated a deep understanding of real-world AI applications. Mohammed is a valuable asset to any AI team, and I highly recommend him for any AI-related endeavors.",
+    name: "Kaushal Goswani",
+    designation: "Business Development Manager",
+    company: "USAII",
+    image: "https://i.postimg.cc/rpzcWnp3/kaushal.jpg",
   },
   {
     testimonial:
-      "I've worked with a lot of engineers over the years, and Jeff is one of the best. His technical skills are top-notch, but what really sets him apart is his ability to communicate complex ideas in a way that everyone on the team can understand.",
-    name: "Megan Stewart",
-    designation: "",
-    company: "Hack Reactor",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Mohammed possesses a genuine passion for data science, with an unwavering commitment to learning and a strong desire to apply his knowledge in practical settings to drive value for businesses. Throughout our mentorship, I was impressed by his dedication to expanding his skillset, and his ability to quickly grasp complex concepts in data science. He is a fine communicator, both in technical and non-technical contexts, and his willingness to learn from feedback is a demonstration of his resilience.",
+    name: "Sahir Maharaj",
+    designation: "Data Scientist",
+    company: "Old Mutual Limited",
+    image: "https://i.postimg.cc/XqdMVtvS/Sahir.jpg",
   },
 ];
 const imageProjects = [

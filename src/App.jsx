@@ -12,6 +12,8 @@ import {
   StarsCanvas,
   Footer,
 } from "./components";
+import Testimony from "./components/Testimony";
+
 
 const App = () => {
   return (
@@ -37,6 +39,10 @@ const App = () => {
         </div>
         <div className="relative z-0">
           <Feedbacks />
+          <StarsCanvas />
+        </div>
+        <div className="relative z-0">
+          <Testimony />
           <StarsCanvas />
         </div>
         <div className="relative z-0">

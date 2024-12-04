@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { jeff } from "../assets";
+
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <div
@@ -23,7 +23,7 @@ const ServiceCard = ({ index, title, icon }) => (
       >
         <img
           src={icon}
-          alt="web-development"
+          alt={title}
           className="w-16 h-16 object-contain"
         />
 
@@ -42,48 +42,26 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}>Overview.</h2>
       </div>
-      <div className="flex items-center min-[1000px]:flex-row flex-col-reverse">
+      <div className="flex items-center flex-col">
         <p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Hello! I'm Jeff Jiang, a New York-based Full-Stack Developer
-          proficient in an array of modern technologies including Python 3,
-          JavaScript ES6+, SQL, Django 4, MongoDB, Node.js, React, and more. I'm
-          passionate about creating dynamic, efficient, and user-friendly web
-          applications. I have hands-on experience in developing e-commerce
-          platforms, utilizing technologies such as Next.js, Strapi, Tailwind,
-          Firebase, and Redux. I am also experienced in managing the full
-          project lifecycle from setup to deployment. My journey in tech is
-          supported by my prior experiences, including my time as a Police
-          Officer at NYPD and a Restaurant Manager, which honed my skills in
-          teamwork, problem-solving, and operations management. Feel free to
-          explore my projects and get in touch at{" "}
+          Hi, I'm Mohammed Bahageel, an AI developer and data scientist based in Saudi Arabia with over four years of experience in artificial intelligence, machine learning, and data science. My journey began with a passion for unlocking insights hidden within data, and it has evolved into a drive to create transformative AI solutions that address real-world challenges.
+
+          My expertise spans a range of technologies, including Python, TensorFlow, LangChain, Flask, and OpenAI's API, enabling me to design applications like virtual assistant avatars, medical transcription tools, and conversational AI platforms. I thrive on solving complex problems, applying predictive analytics, and developing systems that empower decision-making in healthcare and education.
+
+          I’m deeply fascinated by the potential of AI and ML to revolutionize industries, from improving patient care with intelligent systems to enhancing learning experiences with personalized education solutions. I firmly believe that combining data science with cutting-edge AI technology can lead to innovations that make a meaningful impact.
+
+          Beyond my work, I enjoy exploring multilingual communication as a tool to connect with diverse perspectives. Feel free to explore my projects and reach out at{" "}
           <a
-            href="mailto:jeff.jiang13@gmail.com"
+            href="mailto:m.bahageel88@gmail.com"
             className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black"
           >
-            jeff.jiang13@gmail.com.
-          </a>{" "}
-          I'm always open to new opportunities and collaborations!{" "}
+            m.bahageel88@gmail.com
+          </a>
+          . I'm always eager to collaborate on projects that push the boundaries of what's possible in AI, ML, and data science!
         </p>
-        <Tilt className="xs:w-[350px] xs:h-[350px] w-full h-full m-auto max-[1000px]:my-14">
-          <div
-            variants={fadeIn("", "", 0.5, 1)}
-            className="xs:w-[350px] w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-          >
-            <div
-              options={{ max: 45, scale: 1, speed: 450 }}
-              className="bg-tertiary rounded-[20px] min-h-[250px] flex justify-evenly items-center flex-col overflow-hidden"
-            >
-              <img
-                src={jeff}
-                alt="jeff"
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </div>
-        </Tilt>
       </div>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
@@ -95,3 +73,4 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
+

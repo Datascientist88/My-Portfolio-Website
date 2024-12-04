@@ -5,25 +5,35 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Ticofab = ({ isMobile }) => {
-  const tico = useGLTF("./astro/scene.gltf");
+  const tico = useGLTF("./spaceShip/scene.gltf");
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
-      <spotLight
-        position={[-30, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
+      {/* Global ambient light for general brightness */}
+      <ambientLight intensity={0.5} />
+      
+      {/* Directional light for focused lighting */}
+      <directionalLight
+        position={[10, 10, 10]} // Light coming from top-right
+        intensity={1.5}
         castShadow
-        shadow-mapSize={1024}
       />
-      <pointLight intensity={1} />
+      <directionalLight
+        position={[-10, 10, -10]} // Light coming from top-left
+        intensity={1.2}
+        castShadow
+      />
+
+      {/* Point lights to highlight specific areas */}
+      <pointLight position={[5, 5, 5]} intensity={1} />
+      <pointLight position={[-5, -5, -5]} intensity={0.8} />
+
+      {/* Space ship model */}
       <primitive
         object={tico.scene}
-        scale={isMobile ? 1.2 : 1.65}
-        position={isMobile ? [0, -2.9, -0.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.5, -0.1]}
+        scale={isMobile ? 0.3 : 0.6} // Reduced scale for smaller size
+        position={[0, -1, 0]} // Centered position
+        rotation={[0, Math.PI /180, 0]} // Rotated for better alignment
       />
     </mesh>
   );
@@ -33,21 +43,15 @@ const TicofabCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
 
-    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
 
-    // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    // Remove the listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
@@ -55,26 +59,32 @@ const TicofabCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
+      frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [18, 5, 5], fov: 25 }}
+      camera={{ position: [1, 50, 10], fov: 50 }} // Camera moved farther back
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
-          autoRotateSpeed={2}
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          autoRotateSpeed={0.5} // Slower auto-rotation for smoother effect
+          enableZoom={false} // Enable zoom for exploration
+          minDistance={30} // Prevent zooming too close
+          maxDistance={100} // Allow zooming far out
+          maxPolarAngle={Math.PI / 2} // Prevent flipping
+          minPolarAngle={0} // Prevent flipping
         />
         <Ticofab isMobile={isMobile} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
 };
 
 export default TicofabCanvas;
+
+
+
+
+
