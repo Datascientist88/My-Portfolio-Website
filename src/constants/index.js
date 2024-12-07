@@ -1,5 +1,7 @@
 import {
   mobile,
+  myFirst,
+  mySecond,
   backend,
   creator,
   web,
@@ -270,413 +272,75 @@ const testimonials = [
 const imageProjects = [
   {
     id: 1,
-    image: portfolio15,
-    url: "https://madamcoon.com/",
-    title: "Madamcoon Maine Coon Cattery NYC",
+    image:myFirst,
+    url: "https://medical-ai-assistant-based-on-rag.onrender.com/",
+    title: "Medical AI Assistant With RAG",
     description: "",
   },
   {
     id: 2,
-    image: portfolio16,
-    url: "https://chiquechickshop.com/",
-    title: "ChiqueChickShop",
+    image: mySecond,
+    url: "https://usmle-conversationalassistant.onrender.com/",
+    title: "USMLE Exam Assistant",
     description: "",
   },
-  {
-    id: 3,
-    image: portfolio17,
-    url: "https://jj-tailortech.vercel.app/",
-    title: "TailorTech",
-    description: "",
-  },
-  {
-    id: 4,
-    image: shop,
-    url: "https://jj-ecomstore.vercel.app/",
-    title: "E-commerce platform",
-    description: "",
-  },
-  {
-    id: 5,
-    image: movie,
-    url: "https://jj-movie-app.netlify.app/",
-    title: "Movie app",
-    description: "",
-  },
-  {
-    id: 6,
-    image: youtube,
-    url: "https://jj-youtube-clone.netlify.app/",
-    title: "Youtube clone",
-    description: "",
-  },
-  {
-    id: 7,
-    image: ig,
-    url: "https://jj-ig.netlify.app/",
-    title: "Instagram clone",
-    description: "",
-  },
-  {
-    id: 8,
-    image: tiktok,
-    url: "https://jj-tiktok.vercel.app/",
-    title: "TikTok clone",
-    description: "",
-  },
-  {
-    id: 9,
-    image: linktree,
-    url: "https://jj-linktri.vercel.app/",
-    title: "LinkTree clone",
-    description: "",
-  },
-  {
-    id: 10,
-    image: smartrep,
-    url: "https://jj-smartrep.vercel.app/",
-    title: "SmartRep AI",
-    description: "",
-  },
-  {
-    id: 11,
-    image: zapflow,
-    url: "https://jj-zapflow.vercel.app/",
-    title: "ZapFlow",
-    description: "",
-  },
-  {
-    id: 12,
-    image: matrixai,
-    url: "https://jj-matrix-ai.vercel.app/",
-    title: "Matrix AI",
-    description: "",
-  },
-  {
-    id: 13,
-    image: notable,
-    url: "https://jj-notable.up.railway.app/",
-    title: "Notable",
-    description: "",
-  },
-  {
-    id: 14,
-    image: beeclone,
-    url: "https://jj-newsletter.vercel.app/",
-    title: "Beeclone",
-    description: "",
-  },
+ 
 ];
 
 const projects = [
   {
-    name: "SmartRep AI",
+    name: "Medial AI Assistant",
     description:
-      "SmartRep AI is an advanced AI chatbot designed to streamline customer interactions, book appointments, process payments, and manage leads. It seamlessly integrates with any website, offering a customizable interface and a suite of powerful features to enhance user experience and business operations.",
+      "The Medical AI Assistant is an innovative application designed to revolutionize how healthcare professionals access and utilize medical knowledge. Powered by **Retrieval Augmented Generation (RAG)**, it leverages a comprehensive corpus of **250 medical handbooks**, including clinical guidelines, medical textbooks, and research papers, to dynamically retrieve and generate precise, evidence-based responses. This assistant serves as a powerful tool for diagnosing diseases, recommending treatments, and offering detailed explanations, making it ideal for both clinical decision support and medical education. Built with **LangChain** for managing context-driven retrieval, **OpenAI embeddings** for natural language understanding, and a lightweight yet interactive **Streamlit** frontend, it combines state-of-the-art AI and machine learning with an intuitive user experience. By providing real-time, context-aware insights, this assistant empowers professionals to make accurate, informed decisions, enhancing patient care and supporting students and trainees in mastering complex medical concepts.",
     tags: [
       {
-        name: "Next.js",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "Neon",
+        name: "Langchain",
         color: "green-text-gradient",
       },
       {
-        name: "Typescript",
+        name: "TOpenAI",
         color: "pink-text-gradient",
       },
     ],
-    image: smartrep,
-    source_code_link: "https://github.com/jeffjiang13/smartrep-ai",
-    liveUrl: "https://jj-smartrep.vercel.app/",
+    image: myFirst,
+    source_code_link: "https://github.com/Datascientist88/Medical_AI_Assistant.git",
+    liveUrl: "https://medical-ai-assistant-based-on-rag.onrender.com/",
   },
   {
-    name: "Notable",
+    name: "US Medical License Exam Assistant",
     description:
-      "Experience unparalleled team collaboration with Notable, a cutting-edge SaaS platform designed to enhance productivity dynamically. Built with Next.js 13 and adorned with the latest technologies like Stripe for secure payments, Drizzle ORM for efficient data management, Tailwind CSS for intuitive styling, Supabase for a scalable backend, and WebSockets for real-time interactions, Notable offers a modern workspace for teams and individuals to thrive in real time. Perfect for startups and large enterprises alike, Notable seamlessly integrates advanced collaboration tools into your daily operations, setting a new standard for what a collaborative platform can achieve.",
+      "The US Medical License Exam (USMLE) Assistant is an AI-driven educational platform designed to transform exam preparation for medical students and professionals. Built using **Retrieval Augmented Generation (RAG)**, it provides personalized, evidence-based learning by dynamically retrieving and generating high-yield, exam-relevant content. Trained on resources like **First Aid for the USMLE Step 1 (34th Edition)** and other trusted materials, the assistant delivers detailed explanations, mnemonics, and clinical reasoning guidance tailored to the USMLE syllabus. The **React.js** frontend, styled with a modern **Glassmorphism** design, ensures a sleek and user-friendly interface, while the **Python Flask** backend integrates **LangChain**, **OpenAI embeddings**, and multilingual support powered by **ElevenLabs** for global accessibility. By offering interactive coaching, multilingual audio explanations, and performance feedback, the USMLE Assistant redefines how medical professionals prepare for their licensing exams, combining the latest AI advancements with a focus on inclusivity and educational excellence.",
     tags: [
       {
-        name: "Next.js",
+        name: "React JS",
         color: "blue-text-gradient",
-      },
-      {
-        name: "Supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: notable,
-    source_code_link: "https://github.com/jeffjiang13/notable",
-    liveUrl: "https://jj-notable.up.railway.app/",
-  },
-  {
-    name: "ZapFlow",
-    description:
-      "ZapFlow is a SaaS Automation Builder, a powerful and versatile platform designed to automate and streamline your business processes. Built from the ground up without relying on integration libraries, this builder offers a seamless and customizable experience for creating automation flows. Whether you are a small business or a large enterprise, our builder has the features you need to connect various services and automate your workflows efficiently.",
-    tags: [
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Neon",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: zapflow,
-    source_code_link: "https://github.com/jeffjiang13/saas-automation",
-    liveUrl: "https://jj-zapflow.vercel.app/",
-  },
-  {
-    name: "Beeclone",
-    description:
-      "This project is a fullstack clone of Linktree built with Next.js, Tailwind CSS, and MongoDB. It allows users to create a personalized page with links to their content across the internet, customize their profile, and view analytics on their links.",
-    tags: [
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: beeclone,
-    source_code_link: "https://github.com/jeffjiang13/saas-newsletter",
-    liveUrl: "https://jj-newsletter.vercel.app/",
-  },
-  {
-    name: "Matrix AI",
-    description:
-      "MatrixAI is a comprehensive SaaS AI Platform with a modern tech stack including Next.js 13, React, Tailwind CSS, Prisma, and Stripe. This platform is designed to offer a wide range of AI-powered tools, from image and video generation to music creation and conversational AI. Featuring a sleek Tailwind design, full responsiveness, and a variety of authentication methods, this platform is equipped to handle the needs of diverse users.",
-    tags: [
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Prisma",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: matrixai,
-    source_code_link: "https://github.com/jeffjiang13/MatrixAI",
-    liveUrl: "https://jj-matrix-ai.vercel.app/",
-  },
-  {
-    name: "LinkTri",
-    description:
-      "This project is a fullstack clone of Linktree built with Next.js, Tailwind CSS, and MongoDB. It allows users to create a personalized page with links to their content across the internet, customize their profile, and view analytics on their links.",
-    tags: [
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: linktree,
-    source_code_link: "https://github.com/jeffjiang13/LinkTree",
-    liveUrl: "https://jj-linktri.vercel.app/",
-  },
-  {
-    name: "Instagram Clone,",
-    description:
-      "The IG App 2024 is a comprehensive clone of the Instagram platform, designed to replicate the core functionalities and visual appeal of the original app with added enhancements. Developed using modern web technologies such as Vite, React.js, and Tailwind CSS, this project emphasizes a responsive and eye-catching user interface, ensuring optimal performance and user experience across various devices, specifically optimized for screens with a minimum width of 375px.",
-    tags: [
-      {
-        name: "Vite.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "React.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: ig,
-    source_code_link: "https://github.com/jeffjiang13/IG-2.0",
-    liveUrl: "https://jj-ig.netlify.app/",
-  },
-  {
-    name: "TikTok Clone",
-    description:
-      "Explore the modern web with our TikTok Clone Application! This project encompasses a full suite of features including Google Authentication, video uploads, publishing, sharing, commenting, liking, category filtering, advanced search functionalities, profile pages, suggested accounts, and a custom responsive design.",
-    tags: [
-      {
-        name: "TypeScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "React.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Sanity",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tiktok,
-    source_code_link: "https://github.com/jeffjiang13/tiktok",
-    liveUrl: "https://jj-tiktok.vercel.app/",
-  },
-  {
-    name: "TailorTech",
-    description:
-      "This comprehensive SaaS platform leverages the latest technologies including Next.js 14, Bun, Stripe Connect, Prisma, MySQL, and Tailwind to offer a robust solution for building websites, managing projects, and handling financial transactions seamlessly. Designed for agencies, freelancers, and businesses, our platform simplifies the digital landscape through an intuitive interface and powerful features.",
-    tags: [
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Bun",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Prisma",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: portfolio17,
-    source_code_link: "https://github.com/jeffjiang13/tailortech",
-    liveUrl: "https://jj-tailortech.vercel.app/",
-  },
-  {
-    name: "ChiqueChickShop",
-    description:
-      "Engineered the ChiqueChickShop, a fully responsive e-commerce platform, from the ground up. This project entailed designing an inviting online shopping experience complete with intuitive navigation and streamlined user flows. Focused on integrating secure payment processing systems to ensure transactional safety. Implemented best practices in web development to enhance site responsiveness across all devices. Due to client confidentiality, project specifics and GitHub source are kept private.",
-    tags: [
-      {
-        name: "React.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "green-text-gradient",
       },
       {
         name: "CSS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: portfolio16,
-    source_code_link: "https://github.com/jeffjiang13",
-    liveUrl: "https://chiquechickshop.com/",
-  },
-  {
-    name: "Madamcoon Maine Coon Cattery NYC",
-    description:
-      "Led the comprehensive development of the Madamcoon website, from concept to launch, focusing on crafting a responsive design that adapts seamlessly across devices. Enhanced user interaction and experience by implementing a user-friendly interface and streamlined navigation. Integrated robust content management systems for easy content updates and management. Employed advanced SEO strategies to maximize online visibility and search rankings. Project details are confidential with GitHub source kept private for client security.",
-    tags: [
-      {
-        name: "React.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "JavaScript",
         color: "green-text-gradient",
       },
       {
-        name: "CSS",
+        name: "Python",
         color: "pink-text-gradient",
       },
-    ],
-    image: portfolio15,
-    source_code_link: "https://github.com/jeffjiang13",
-    liveUrl: "https://madamcoon.com/",
-  },
-  {
-    name: "Movie App",
-    description:
-      "This app is an online database of information related to movies. Users can search for movies and learn about movies, as well as the cast of the movie. Navigating through the application is made simple with help of a AI voice chatbot. Also provides ratings of movies. Tech stack: JavaScript tools including React.js, Redux, Material UI, Alan AI, and more.",
-    tags: [
       {
-        name: "React.js",
-        color: "blue-text-gradient",
+        name: "Flask",
+        color: "pink-text-gradient",
       },
       {
-        name: "JavaScript",
+        name: "Langchain",
         color: "green-text-gradient",
       },
-      {
-        name: "Material UI",
-        color: "pink-text-gradient",
-      },
     ],
-    image: movie,
-    source_code_link: "https://github.com/jeffjiang13/movie-app",
-    liveUrl: "https://jj-movie-app.netlify.app/",
+    image: mySecond,
+    source_code_link: "",
+    liveUrl: "https://usmle-conversationalassistant.onrender.com",
   },
-  {
-    name: "Ecommerce App",
-    description:
-      "Fully responsive, full-stack e-commerce application with payments. It includes advanced React and Next.js best practices, and integrates Stripe for payment processing. The content of the app can be managed using Sanity, which allows for dynamic modifications of the store's home page and product details. The app is mobile-responsive and includes features such as adding and editing products, advanced card functionalities, and a complete checkout process.",
-    tags: [
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Stripe",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Sanity",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: shop,
-    source_code_link: "https://github.com/jeffjiang13/ecommerce_sanity",
-    liveUrl: "https://jj-ecomstore.vercel.app/",
-  },
-  {
-    name: "YouTube Clone",
-    description:
-      "A responsive React JS application consisting of stunning video sections, custom categories, channel pages, and, most importantly, you can play videos straight from this app!",
-    tags: [
-      {
-        name: "React.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "RAPIDAPI",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: youtube,
-    source_code_link: "https://github.com/jeffjiang13/youtube-clone",
-    liveUrl: "https://jj-youtube-clone.netlify.app/",
-  },
+  
 ];
 
 export {

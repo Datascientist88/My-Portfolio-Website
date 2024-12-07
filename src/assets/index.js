@@ -51,7 +51,8 @@ import matrixai from "./matrixai.png";
 import beeclone from "./beeclone.png";
 import notable from "./notable.png";
 import zapflow from "./zapflow.png";
-
+import myFirst from "./projectone.png";
+import mySecond from "./projecttwo.png";
 
 export {
   logo,
@@ -59,6 +60,8 @@ export {
   creator,
   mobile,
   web,
+  myFirst,
+  mySecond,
   github,
   menu,
   close,
